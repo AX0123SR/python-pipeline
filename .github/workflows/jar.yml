@@ -1,4 +1,4 @@
-name : Python application
+name : Publish a jar
 on : push
 jobs :
    python-version :
