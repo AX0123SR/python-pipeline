@@ -10,5 +10,11 @@ jobs :
         runs-on : ubuntu-latest
         steps : 
            - run : java --version
+           
+   buildjar :
+         runs-on : ubuntu-latest
+         steps : 
+           - run : javac hello.java
+           - run : jar cf hello.jar hello.class
 
 
