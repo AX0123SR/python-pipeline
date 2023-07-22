@@ -1,20 +1,27 @@
 name : Python application
 on : push
 jobs :
-   test1 :
+   python-version :
       runs-on : ubuntu-latest
       steps :
           - run : python --version
           
-   test2 :
+   java-version :
         runs-on : ubuntu-latest
         steps : 
            - run : java --version
+           
+   file : 
+        runs-on : ubuntu-latest
+        steps : 
+           - with :
+               name : hello.java
+               path : .
+         
            
    buildjar :
          runs-on : ubuntu-latest
          steps : 
            - run : javac hello.java
            - run : jar cf hello.jar hello.class
-
-
+           
