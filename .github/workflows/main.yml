@@ -1,0 +1,14 @@
+name : Python application
+on : push
+jobs :
+   test1 :
+      runs-on : ubuntu-latest
+      steps :
+          - run : python -version
+          
+   test2 :
+        runs-on : ubuntu-latest
+        steps : 
+           - run : java --version
+
+
