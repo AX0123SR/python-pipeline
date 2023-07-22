@@ -16,9 +16,7 @@ jobs :
         steps : 
            - with :
                name : hello.java
-               path : .
-         
-           
+               path : .           
    buildjar :
          runs-on : ubuntu-latest
          steps : 
